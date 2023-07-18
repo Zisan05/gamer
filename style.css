@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Work+Sans:ital,wght@0,700;1,400;1,700&display=swap');
+*{
+    font-family: 'Open Sans';
+font-family: 'Work Sans'
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 80px;
+}
+.gamer-part{
+    display: flex;
+    text-align: center;
+    gap: 20px;
+}
+.gamer-part img{
+    width: 86.041px;
+height: 40px;
+margin-top: 40px;
+}
+.gamer-part h1{
+    
+font-size: 45px;
+text-align: center;
+}
+.gamer-part .purple{
+    color: rgb(208, 11, 208);
+}
+.youtube{
+    width: 50px;
+height: 48px;
+}
+.list-button{
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    width: 262px;
+height: 56px;
+padding-left:50px;
+border: 0px;
+}
+
+.tik-tok{
+    width: 24px;
+height: 24px;
+}
+.list-part{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+}
+.list-part li{ 
+  
+    list-style: none;
+
+}
+.list-part li a{
+    text-decoration: none;
+    color: #3C354F;
+}
+.banne-cotainer{
+    display: flex;
+   justify-content: space-around;
+ background-color: #8C57EE0D;
+}
+.banner-title1{
+    margin-top: 200px;
+    color: #0B0223;
+
+font-size: 48px;
+
+}
+.banner-title2{
+    font-size: 95px;
+    
+}
+.banner-pra{
+    color: #534C64;
+    margin-top: -60px;
+}
+
+.sign{display: inline-flex;
+    padding: 21px 40px;
+    border-radius: 48px;
+    background:#FF42A5;
+    gap: 10px;
+    border: 0px;
+    margin-top: 20px;
+}
+.rogue{
+    display: inline-flex;
+    padding: 21px 40px;
+    border-radius: 48px;
+    background:#FF42A5;
+    gap: 10px;
+    border: 0px;
+    background: #4EC5F7;
+    margin-top: 20px;
+}
+@media screen and (max-width:425px) {
+    .nav-container{
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+    }
+    .list-part{
+        flex-direction: column;
+    }
+    
+}
+@media screen and (min-width:428px) and ( max-height:770px){
+    .nav-container{
+        flex-direction:column;
+    }
+    .list-part{
+        flex-direction: column;
+    }
+    .gamer-part{
+        margin-left: 200px;
+
+    }
+}
