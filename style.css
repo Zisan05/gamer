@@ -77,7 +77,10 @@ font-size: 48px;
 .banner-title2{
     font-size: 95px;
     margin-top: -40px;
-    color: #8758F1;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     
 }
 .left-banner{
@@ -115,7 +118,11 @@ font-size: 48px;
     font-size: 48px;
 }
 .funny{
-    color: #F948B2;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Work Sans;
 }
 .card-img-container{
     display: grid;
@@ -200,17 +207,25 @@ margin-left: 240px;
 .footer-title{
     font-size: 18px;
     color: white;
+    margin-top: -10px;
 }
-.footer-img{
-    margin-left: 600px;
-    width: 30%;
+.fa-brands{
+    font-size: 40px;
+}
+.footer-icon-container{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-left: 200px;
+    margin-top: 40px;
+    padding: 0px 200px;
+}
 
-}
+
 .footer-pra-container{
    display: grid;
    grid-template-columns: repeat(4,1fr);
     margin-left: 290px;
-    margin-top: -70px;
+    margin-top: 40px;
 
 }
 .footer-pra{
@@ -291,6 +306,12 @@ margin-left: 240px;
     .footer-pra1{
         margin-left: 30px;
     }
+    .footer-icon-container{
+        grid-template-columns:repeat(3,2fr);
+        margin-left: 55px;
+        padding: 0px 0px;
+
+    }
     
     
 }
@@ -348,17 +369,9 @@ margin-left: 240px;
 
 }
 
-
-
-
-
-
-
-
-.footer-img{
-    margin-left: 80px;
-    width: 80%;
-    margin-top: 20px;
+.footer-icon-container{
+   padding: 0px 0px;
+   margin-left: 50px;
 }
 .footer-title-container{
    grid-template-columns: repeat(3,2fr);
