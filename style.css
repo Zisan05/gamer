@@ -61,10 +61,11 @@ height: 24px;
     text-decoration: none;
     color: #3C354F;
 }
-.banne-cotainer{
+.banner-cotainer{
     display: flex;
    justify-content: space-around;
  background-color: #8C57EE0D;
+ align-items: center;
 }
 .banner-title1{
     margin-top: 200px;
@@ -75,7 +76,12 @@ font-size: 48px;
 }
 .banner-title2{
     font-size: 95px;
+    margin-top: -40px;
+    color: #8758F1;
     
+}
+.left-banner{
+    margin-bottom: 300px;
 }
 .banner-pra{
     color: #534C64;
@@ -83,6 +89,7 @@ font-size: 48px;
 }
 
 .sign{display: inline-flex;
+    color: white;
     padding: 21px 40px;
     border-radius: 48px;
     background:#FF42A5;
@@ -91,6 +98,7 @@ font-size: 48px;
     margin-top: 20px;
 }
 .rogue{
+    color: white;
     display: inline-flex;
     padding: 21px 40px;
     border-radius: 48px;
@@ -100,26 +108,273 @@ font-size: 48px;
     background: #4EC5F7;
     margin-top: 20px;
 }
-@media screen and (max-width:425px) {
+.card-title-container{
+    text-align: center;
+}
+.card-title{
+    font-size: 48px;
+}
+.funny{
+    color: #F948B2;
+}
+.card-img-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 50px;
+}
+.card-img-pra{
+    margin-left: 20px;
+    color: #534C64;
+    font-size: 20px;
+}
+.video-icon{
+    width: 48px;
+height: 48px;
+position: relative;
+left: 990px;
+bottom: 320px;
+border-radius: 50%;
+}
+.play-part-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    align-items: center;
+}
+.play-title{
+    font-size: 48px;
+}
+.play-pra{
+    color: #534C64;
+    font-size: 18px;
+}
+.play-img1{
+width: 634.833px;
+height: 650px;
+}
+.play-img2{
+    position: relative;
+    left: 700px;
+    bottom: 300px;
+}
+.games-button{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 50px;
+background: #FFF;
+border: 0px;
+}
+.games-container :hover{
+    border: 1px solid  #F948B2 ;
+    border-radius: 50px;
+    color: #F948B2 ;
+
+}
+.games-container{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 50px;
+    margin-left: 200px;
+}
+.games-img{
+width: 60px;
+height: 60px;
+}
+.nav-container1{
+    margin-left: 40%;
+    margin-top: 50px;
+}
+.nav-container1,.purple{
+    color: white;
+}
+footer{
+    background: #0B0223;
+}
+.footer-title-container{
+    display:grid;
+grid-template-columns: repeat(6,1fr);
+margin-left: 240px;
+
+}
+.footer-title{
+    font-size: 18px;
+    color: white;
+}
+.footer-img{
+    margin-left: 600px;
+    width: 30%;
+
+}
+.footer-pra-container{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+    margin-left: 290px;
+    margin-top: -70px;
+
+}
+.footer-pra{
+    color: #FFF;
+    font-size: 12px;
+}
+.footer-pra1{
+    color: #FFF;
+    margin-left: 700px;
+    font-size: 12px;
+}
+ 
+@media screen and (max-width:500px){
     .nav-container{
-        display: flex;
-        flex-direction:column;
+        flex-direction: column;
         text-align: center;
     }
     .list-part{
         flex-direction: column;
     }
+    .banner-cotainer{
+        flex-direction: column;
+        margin-left: 25px;
+    }
+    .img-1{
+        width: 80%;
+        margin-top: -280px;
+        margin-left: 40px;
+    }
+    .card-title-container{
+        margin-left: 50px;
+    }
+    .card-img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .play-part-container{
+        flex-direction: column;
+        margin-top: -80px;
+    }
+    .play-img1{
+        width: 80%;
+        margin-top: 20px;
+    }
+    .play-img2{
+        width: 40%;
+        position: relative;
+        left: 0px;
+        bottom: 120px;
+    }
+    .games-container{
+     grid-template-columns: repeat(2,3fr);
+     margin-left: 0px;
+    }
+    .games-container :hover{
+        border: 1px solid  #F948B2 ;
+        border-radius: 50px;
+        color: #F948B2 ;
+    
+    }
+    .footer-img{
+        margin-left: 40px;
+        width: 80%;
+        margin-top: 20px;
+    }
+    .footer-title-container{
+       grid-template-columns: repeat(3,2fr);
+       margin-left: 20px;
+    }
+    
+    .nav-container1{
+        margin-left: 20px;
+    }
+    .footer-pra-container{
+     grid-template-columns: repeat(2,2fr);
+     margin-left: 50px;
+     margin-top: 10px;
+    }
+    .footer-pra1{
+        margin-left: 30px;
+    }
+    
     
 }
-@media screen and (min-width:428px) and ( max-height:770px){
+@media screen and (min-width:501px) and (max-width:768px) {
     .nav-container{
-        flex-direction:column;
+        flex-direction: column;
+        text-align: center;
     }
     .list-part{
         flex-direction: column;
     }
     .gamer-part{
-        margin-left: 200px;
-
+        margin-left: 170px;
     }
+    .banner-cotainer{
+        flex-direction: column;
+        margin-left: 25px;
+}
+.img-1{
+    width: 60%;
+    margin-top: -280px;
+    margin-left: 150px;
+}
+.card-title{
+    font-size: 40px;
+    margin-right: 30px;
+}
+.card-img-container{
+    grid-template-columns: repeat(2,1fr);
+}
+.card-img{
+    width: 70%;
+}
+.card-img-pra{
+    font-size: 12px;
+}
+.play-part-container{
+    flex-direction: column;
+    margin-top: -80px;
+}
+.play-img2{
+    width: 40%;
+    position: relative;
+    left: 0px;
+    bottom: 160px;
+}
+.games-container{
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 120px;
+   }
+   .games-container :hover{
+    border: 1px solid  #F948B2 ;
+    border-radius: 50px;
+    color: #F948B2 ;
+
+}
+
+
+
+
+
+
+
+
+.footer-img{
+    margin-left: 80px;
+    width: 80%;
+    margin-top: 20px;
+}
+.footer-title-container{
+   grid-template-columns: repeat(3,2fr);
+   margin-left: 100px;
+}
+
+.nav-container1{
+    margin-left: 50px;
+}
+.footer-pra-container{
+ grid-template-columns: repeat(2,2fr);
+ margin-left: 150px;
+ margin-top: 10px;
+}
+.footer-pra1{
+    margin-left: 180px;
+}
+
 }
